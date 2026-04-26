@@ -28,12 +28,10 @@ export default function HomeScreen() {
     <SafeAreaView style={[styles.safe, { backgroundColor: theme.bg }]}>
       <ScrollView contentContainerStyle={styles.container}>
 
-        {/* Logo / Nome do App */}
         <Text style={[styles.appName, { color: theme.accent }]}>
           {'<Public.Dev/>'}
         </Text>
 
-        {/* Imagem de Perfil */}
         <View style={styles.avatarWrapper}>
           <Image
             source={
@@ -46,7 +44,6 @@ export default function HomeScreen() {
           <View style={[styles.avatarBorder, { borderColor: theme.accent }]} />
         </View>
 
-        {/* Apresentação */}
         <Text style={[styles.title, { color: theme.text }]}>
           Olá, nós somos{'\n'}
           <Text style={{ color: theme.accent }}>Artur e Pietro 👋</Text>
@@ -56,7 +53,6 @@ export default function HomeScreen() {
           únicas. Estudantes de ADS e entusiasta de React Native.
         </Text>
 
-        {/* Botões principais */}
         <View style={styles.buttonRow}>
           <PrimaryButton
             label="Sobre nós"
@@ -74,21 +70,18 @@ export default function HomeScreen() {
           />          
         </View>
 
-        {/* Redes Sociais */}
         <Text style={[styles.sectionTitle, { color: theme.text }]}>
           Acesse minhas redes — {isDark ? 'Pietro' : 'Artur'}
         </Text>
 
         <View style={styles.socialGrid}>
           {isDark ? (
-            // Redes do Pietro
             <>
               <SocialButton label="GitHub"    icon="🐙" url="https://github.com/pie-tro"    color="#24292e" />
               <SocialButton label="LinkedIn"  icon="💼" url="https://www.linkedin.com/in/pietro-maia-fernandes/" color="#0077b5" />
               <SocialButton label="Instagram" icon="📸" url="https://www.instagram.com/piedgd_/"  color="#e1306c" />
             </>
           ) : (
-            // Redes do Artur
             <>
               <SocialButton label="GitHub"    icon="🐙" url="https://github.com/ClairDeLunezz"    color="#24292e" />
               <SocialButton label="LinkedIn"  icon="💼" url="https://www.linkedin.com/in/artur-silva-5b5678366/" color="#0077b5" />
@@ -97,7 +90,6 @@ export default function HomeScreen() {
           )}
         </View>
 
-        {/* Switch */}
         <View style={[styles.switchRow, { backgroundColor: theme.card }]}>
           <Text style={[styles.switchLabel, { color: theme.text }]}>
             {isDark ? '👤 Pietro' : '👤 Artur'}
