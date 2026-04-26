@@ -22,8 +22,8 @@ export default function AboutScreen() {
         </TouchableOpacity>
 
         <View style={styles.header}>
-          <Text style={styles.tag}>{'// quem sou eu'}</Text>
-          <Text style={styles.title}>Sobre mim</Text>
+          <Text style={styles.tag}>{'// quem somos'}</Text>
+          <Text style={styles.title}>Sobre nós</Text>
           <View style={styles.divider} />
         </View>
 
